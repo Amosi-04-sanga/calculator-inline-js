@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- calculator-->
+    <form class="calculator" name="calculator">
+
+       <input type="text" class="answer answer_typo" name="answer" placeholder="0" disabled>
+
+       <input type="button" value="1" class="number onhover" onclick="calculator.answer.value += '1' ">
+       <input type="button" value="2" class="number onhover" onclick="calculator.answer.value += '2' ">
+       <input type="button" value="3" class="number onhover" onclick="calculator.answer.value += '3' ">
+       <input type="button" value="4" class="number onhover" onclick="calculator.answer.value += '4' ">
+       <input type="button" value="5" class="number onhover" onclick="calculator.answer.value += '5' ">
+       <input type="button" value="6" class="number onhover" onclick="calculator.answer.value += '6' ">
+       <input type="button" value="7" class="number onhover" onclick="calculator.answer.value += '7' ">
+       <input type="button" value="8" class="number onhover" onclick="calculator.answer.value += '8' ">
+       <input type="button" value="9" class="number onhover" onclick="calculator.answer.value += '9' ">
+       <input type="button" value="-" class="operator onhover" onclick="calculator.answer.value += '-' ">
+       <input type="button" value="/" class="operator onhover" onclick="calculator.answer.value += '/' ">
+       <input type="button" value="+" class="operator onhover" onclick="calculator.answer.value += '+' ">
+       <input type="button" value="0" class="operator onhover" onclick="calculator.answer.value += '0' ">
+       <input type="button" value="c" class="clear onhover" onclick="calculator.answer.value = '' ">
+       <input type="button" value="=" class="equal onhover" onclick="calculator.answer.value = eval(calculator.answer.value) ">
+       
+    </form>
+</body>
+</html>
